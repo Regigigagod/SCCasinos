@@ -1,6 +1,8 @@
 [
     {
         "name": "WowVegas",
+        "active_login": true,
+        "description": "Automates login and reward collection for WowVegas.",
         "login_url": "https://www.wowvegas.com/login",
         "username_selector": "#email",
         "password_selector": "#password",
@@ -10,6 +12,7 @@
             { "action": "wait", "time": 5000 },
             { "action": "click", "selector": ".claim-reward" }
         ],
+        "extracted_value_selector": ".balance-display",
         "timer": 86400000
     }
 ]
