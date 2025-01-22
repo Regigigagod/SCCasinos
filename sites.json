@@ -8,11 +8,17 @@
         "password_selector": "#password",
         "login_button_selector": "button.bg-green-600.rounded-md.w-full",
         "steps": [
+            { "action": "navigate", "url": "{login_url}" },
+            { "action": "wait", "time": 3000 },
+            { "action": "type", "selector": "#email", "text": "{username}" },
+            { "action": "type", "selector": "#password", "text": "{password}" },
+            { "action": "click", "selector": "button.bg-green-600.rounded-md.w-full" },
+            { "action": "wait", "time": 5000 },
             { "action": "navigate", "url": "https://www.wowvegas.com/promotions/daily-coin-reward" },
             { "action": "wait", "time": 5000 },
-            { "action": "click", "selector": ".claim-reward" }
+            { "action": "click", "selector": "div.container button.bg-blue-500.mt-4" }
         ],
         "extracted_value_selector": ".balance-display",
-        "timer": 86400000
+        "timer": 86400000 // 24 Hours
+        timerInstance: null // Stores interval instance
     }
-]
