@@ -19,6 +19,5 @@
             { "action": "click", "selector": "div.container button.bg-blue-500.mt-4" }
         ],
         "extracted_value_selector": ".balance-display",
-        "timer": 86400000 // 24 Hours
-        timerInstance: null // Stores interval instance
+        "timer": 86400000 
     }
