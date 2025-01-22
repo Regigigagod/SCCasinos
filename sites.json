@@ -1,0 +1,15 @@
+[
+    {
+        "name": "WowVegas",
+        "login_url": "https://www.wowvegas.com/login",
+        "username_selector": "#email",
+        "password_selector": "#password",
+        "login_button_selector": "button.bg-green-600.rounded-md.w-full",
+        "steps": [
+            { "action": "navigate", "url": "https://www.wowvegas.com/promotions/daily-coin-reward" },
+            { "action": "wait", "time": 5000 },
+            { "action": "click", "selector": ".claim-reward" }
+        ],
+        "timer": 86400000
+    }
+]
